@@ -254,7 +254,7 @@ func main() {
 		template.Execute(w, finalArtists)
 		//We execute the template with the information from finalArtists.
 	})
-	fmt.Printf("Starting server at port 8088\n")
+	fmt.Printf("Starting server at port http://localhost:8088\n")
 	//Print this message to the terminal to signal that the webpage is ready.
 	if err := http.ListenAndServe(":8088", nil); err != nil {
 		fmt.Println("HTTP status 500 - Internal Server Errors")
